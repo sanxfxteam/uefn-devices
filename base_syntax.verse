@@ -20,6 +20,14 @@ for (Index -> Spawner : CreatureSpawners):
 # Get a random element from an array
 Index := GetRandomInt(0, CreatureSpawners.Length);
 
+# For loop
+for (i := 1..BankCoinsIncrement):
+  Tracker.Increment(Agent);
+
+# Float to Int
+if:
+  IntTime := Int[Time]
+
 # Events
 
 # Subscribing to an event
